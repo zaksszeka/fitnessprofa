@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/bt/css/bootstrap.min.css' />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img id="slika2" src="/images/logob.png"></a>
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/plan">PLAN</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/utisak">O PROGRAMU</a>
+          </li>
+          
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/logout">
+          
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ODJAVA</button>
+        </form>
+      </div>
+    </nav>
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-pills card-header-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Moj Fitness Plan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/noviplan">KREIRAJ NOVI</a>
+
+          </li>
+          
+        </ul>
+      </div>
+      <div class="card-body text-left">
+        <h2>Trening:</h2>
+        <p >
+          <%=plan.trening%>
+        </p>
+        <h2>Ishrana:</h2>
+        <p>
+          <%=plan.ishrana%>
+        </p>
+      </div>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/bt/css/bootstrap.min.css' />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-top: -4%;margin-left: -4%;margin-right: -4%;">
+      <a class="navbar-brand" href="#"><img id="slika2" src="/images/logob.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/plan">PLAN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/kontakt">KONTAKT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/utisak">O PROGRAMU</a>
+          </li>
+          
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/login">
+          
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ODJAVA</button>
+        </form>
+      </div>
+    </nav>
+    <p><h2>Kreiranje novog plana ishrane i treninga: </h2></p>
+
+
+    <div>
+    <form class="forma" style="margin-top: 5%;" action="/plan" method="POST">
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Pol:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>muško</option>
+              <option>žensko</option>
+            </select>
+          </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Unesite svoju visinu: </label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="visina u cm">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Unesite svoju tezinu: </label>
+        <input name="tezina" type="number" class="form-control" id="exampleFormControlInput1" placeholder="tezina u kg">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Cilj ishrane i treninga: </label>
+        <select name="cilj" class="form-control" id="exampleFormControlSelect1">
+          <option value="mrsavljenje">Mrsavljenje</option>
+          <option value="gojenje">Dodavanje kilograma kroz misićnu masu</option>
+          <option value="powerlifting">Powerlifting</option>
+          <option value="crossfit">Crossfit</option>
+          <option value="tegovi">Takmičarsko dizanje tegova</option>
+          
+        </select>
+        
+      </div>
+
+      
+      
+      
+      <button class="btn btn-primary" type="submit">SAČUVAJ</button>
+    </form>
+    </div>
+  
+     
+    
+    
+  </body>
+
+</html>
